@@ -95,7 +95,7 @@ RUN tar -xvzf ${ARENA_TAR_PATH}
 WORKDIR ${ARENA_EXTRACTED_PATH}
 RUN sh Arena_SDK_ARM64.conf
 
-login as non-root user
+# login as non-root user
 USER $USERNAME
 
 RUN pip3 install gdown
